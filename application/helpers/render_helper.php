@@ -11,8 +11,8 @@ if (!function_exists('render')) {
         $method = $ci->router->method; // gets function name (controller function)
 
         if ($parent != ''):
-            $ci->data['child'] = $ci->load->view($class . '/' . $method, $object->data, TRUE);
-            $ci->load->view('_parent_templates/' . $parent, $ci->data);
+            $object->data['child'] = $ci->load->view($class . '/' . $method, $object->data, TRUE);
+            $ci->load->view('_parent_templates/' . $parent, $object->data);
         else:
             $ci->load->view($class . '/' . $method, $object->data);
         endif;

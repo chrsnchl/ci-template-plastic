@@ -12,8 +12,10 @@ class About extends CI_Controller {
         render($this, 'main');
     }
 
-    public function christopherme() {                
-        render($this);
+    public function christopherme() {       
+        
+        $this->data['title'] = 'Chris Page';
+        render($this, 'main');
     }
 
 }

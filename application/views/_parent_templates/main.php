@@ -1,0 +1,5 @@
+THIS IS THE MAIN TEMPLATE
+
+<?php echo $child; ?>
+
+END OF MAIN TEMPLATE

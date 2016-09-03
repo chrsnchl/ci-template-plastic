@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                         // Compile each LESS component excluding "bootstrap.less", 
                         // "mixins.less" and "variables.less" 
                         //src: ['*.less', '!{boot,var,mix}*.less'],
-                        src: ['*.less'],
+                        src: ['**/*.less'],
                         dest: 'assets/dist/css/',
                         ext: '.css'
                     }

@@ -6,7 +6,6 @@ class About extends CI_Controller {
     
     public function __construct() {
         parent::__construct();
-        $this->band = 'ACDC';
     }
     public function index() {
         render($this, 'main');

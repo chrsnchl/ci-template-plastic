@@ -1,0 +1,64 @@
+/*Generic Global Layout*/
+* {
+  /*outline: 1px solid #ccc;  */
+}
+body,
+ul {
+  background: #222;
+}
+.content-block {
+  color: #d4d4d4;
+}
+h1,
+h2,
+h3 {
+  color: #03a9f4;
+}
+p {
+  margin: 10px 0;
+}
+li {
+  background: #252525;
+}
+header ul {
+  float: right;
+  width: 70%;
+  text-align: right;
+  margin-right: 20%;
+}
+header ul li {
+  display: inline-block;
+  padding: 5px;
+}
+/*Element specific*/
+.frame {
+  border-bottom: 1px solid #ccc;
+}
+.frame .headline {
+  min-height: 390px;
+  text-align: center;
+  background: url(../../../src/img/books.jpg) no-repeat scroll center center;
+  background-size: cover;
+  padding-top: 200px;
+}
+.frame .headline .copy {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  display: inline-block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 10px #000 inset;
+}
+.frame .chess {
+  background: url(../../../src/img/chess.jpg) no-repeat scroll center center;
+  background-size: cover;
+  height: 300px;
+}
+.features.frame .bit-3 {
+  text-align: center;
+}
+.contactform {
+  text-align: center;
+}
+.contactform * {
+  padding: 10px;
+}

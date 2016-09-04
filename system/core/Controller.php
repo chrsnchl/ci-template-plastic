@@ -80,6 +80,7 @@ class CI_Controller {
 		log_message('info', 'Controller Class Initialized');
                 
                 $this->data['css'] =  auto_css($this);
+                $this->data['js'] =  auto_js($this);
 	}
 
 	// --------------------------------------------------------------------

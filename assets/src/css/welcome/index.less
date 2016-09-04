@@ -1,0 +1,76 @@
+@dark-gray: #222;
+@light-blue: #03a9f4;
+
+/*Generic Global Layout*/
+* {
+    /*outline: 1px solid #ccc;  */
+}
+
+body, ul {
+    background: @dark-gray;
+}
+.content-block {
+    color: lighten(@dark-gray, 70%);
+}
+h1, h2, h3 {
+    color: @light-blue;
+}
+p {
+    margin: 10px 0;
+}
+li {
+    background: spin(lighten(@dark-gray, 1%), 180);
+}
+
+header ul {
+    float: right;
+    width: 70%;
+    text-align: right;
+    margin-right: 20%;
+
+    li {
+        display: inline-block;
+        padding: 5px;
+    }
+}
+
+/*Element specific*/
+
+.frame {
+    border-bottom: 1px solid #ccc;
+
+    .headline {
+        min-height: 390px;
+        text-align: center;
+        background: url(../../../src/img/books.jpg) no-repeat scroll center center;
+        background-size: cover;
+        padding-top: 200px;
+
+        .copy {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: inline-block;
+            margin: 0 auto;
+            box-shadow: 0 0 20px 10px #000 inset;
+        }
+    }
+    .chess {
+        background: url(../../../src/img/chess.jpg) no-repeat scroll center center;
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+.features.frame {
+    .bit-3 {
+        text-align: center;
+    }
+}
+
+.contactform {
+    text-align: center;
+
+    * {
+        padding: 10px;
+    }
+}
